@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won? board
-  WIN_COMBINATIONS.select do |c|
+  WIN_COMBINATIONS.detect do |c|
     if c == "X" || c == "O"
       return c
     elsif c == "X" && c == "O"
