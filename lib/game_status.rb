@@ -34,4 +34,5 @@ end
 def full? board
   board.all? do |a|
     a == "X" || a == "O"
+  end
 end
