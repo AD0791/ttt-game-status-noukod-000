@@ -26,7 +26,7 @@ def won? board
     elsif board[winpo] == "O"&&board[winpo2]=="O"&&board[winpo3] == "O"
       return c
     else
-      false
+      
     end
   end
 end
@@ -38,9 +38,5 @@ def full? board
 end
 
 def draw? board
-  if full?(board) && !won?(board)
-    true
-  else
-    false
-  end
+   full?(board) && won?(board)
 end
