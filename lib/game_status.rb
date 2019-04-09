@@ -21,12 +21,12 @@ def won? board
     winpo2 = c[1]
     winpo3 = c[2]
     
-    if board[winpo] = "X"&&board[winpo2]=="X"&&board[winpo3]=="X"
+    if board[winpo] == "X"&&board[winpo2]=="X"&&board[winpo3]=="X"
       return c
-    elsif board[winpo] = "O"&&board[winpo2]=="O"&&board[winpo3] == "O"
+    elsif board[winpo] == "O"&&board[winpo2]=="O"&&board[winpo3] == "O"
       return c
     else
-      position_taken?(board,c[0])
+      position_taken?(board)
     end
   end
 end
