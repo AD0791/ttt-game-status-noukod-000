@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won? board
-  WIN_COMBINATIONS.each do |c|
+  WIN_COMBINATIONS.detect do |c|
     winpo = c[0]
     winpo2 = c[1]
     winpo3 = c[2]
@@ -27,7 +27,6 @@ def won? board
       return c
     else
       #position_taken?(board,c)
-      false
     end
   end
 end
