@@ -36,3 +36,7 @@ def full? board
     a == "X" || a == "O"
   end
 end
+
+def draw? board
+  
+end
