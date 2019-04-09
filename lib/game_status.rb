@@ -26,7 +26,7 @@ def won? board
     elsif board[winpo] = "O"&&board[winpo2]=="O"&&board[winpo3] == "O"
       return c
     else
-      position_taken?(board,c)
+      position_taken?(board,c[0])
     end
   end
 end
