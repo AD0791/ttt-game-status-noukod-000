@@ -16,13 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won? board
-  WIN_COMBINATIONS.detect do |c|
-    if c == "X" || c == "O"
-      return c
-    elsif c == "X" && c == "O"
-     return c
-    else
-      return false
-    end
+  WIN_COMBINATIONS.each do |c|
+    winpo = c[0]
+    winpo2 = c[1]
+    winpo3 = c[2]
+    
+    if board[winpo] = "X"&&board[winpo2]=="X"&&board[winpo3]
   end
 end
