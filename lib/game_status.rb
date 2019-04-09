@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won? board
-  WIN_COMBINATIONS.detect do |c|
+  WIN_COMBINATIONS.each do |c|
     winpo = c[0]
     winpo2 = c[1]
     winpo3 = c[2]
